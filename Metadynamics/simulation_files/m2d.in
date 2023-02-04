@@ -1,0 +1,52 @@
+# exploring reaction coordinate 
+# begin with 1d (distanceZ)  
+# how deep and how far it goes in and out of the protein
+# number of contacts 
+colvarsTrajFrequency 5000 
+colvarsRestartFrequency 5000 
+
+colvar {
+name O 
+lowerBoundary -10.5 
+upperBoundary 25.5 
+width 1  
+distanceZ {
+main { atomsFile mineq.pdb 
+        atomsCol B
+        atomsColValue 1  }
+ref { atomsFile mineq.pdb 
+        atomsCol B  
+        atomsColValue 2 } 
+axis (0, 0, 1) 
+}
+}
+
+colvar {
+name CN
+lowerBoundary 0 
+upperBoundary 250
+width 10 
+coordNum {
+group1 { atomsFile mineq.pdb
+        atomsCol B 
+        atomsColValue 1 }
+group2 { atomsFile mineq.pdb
+        atomsCol O 
+        atomsColvalue 2 }         
+cutoff 4.5  
+expNumer 8 ; #2017 Biochemistry  
+expDenom 16 
+}
+}
+
+metadynamics { 
+colvars O CN 
+hillWeight 0.5 0.5 
+hillWidth 1 1;# 2sd (sd should be equal to or greater than colvars width) 
+newHillFrequency 5000 
+wellTempered on
+biasTemperature 4340 ; # PNAS by Tiwary used deltaT = 14T --> factor of 15  
+writeHillsTrajectory on  
+dumpFreeEnergyFile yes 
+}
+ 
