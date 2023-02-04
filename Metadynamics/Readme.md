@@ -1,1 +1,1 @@
-Inputs for metadynamics simulations with NAMD2 and post-processing analysis with PLUMED 
+The simulation_files folder contains the inputs for metadynamics simulations with NAMD2. The Postprocessing_PLUMED contains the post-processing analysis scripts and inputs with PLUMED for calculations of biases from trajectories and free energy profile reconstruction.
