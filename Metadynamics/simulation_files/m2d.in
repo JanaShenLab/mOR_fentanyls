@@ -1,7 +1,3 @@
-# exploring reaction coordinate 
-# begin with 1d (distanceZ)  
-# how deep and how far it goes in and out of the protein
-# number of contacts 
 colvarsTrajFrequency 5000 
 colvarsRestartFrequency 5000 
 
