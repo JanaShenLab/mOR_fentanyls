@@ -1,3 +1,2 @@
 
-Ligand functional group--residue interaction energies were used as the descriptors.
-The energies were calculated from the combined metadynamics trajectories, so there were reweighted using the protocol in PLUMED.
+snapshot_groups.zip contain the input files. The notebook walks through the analysis (regression, feature importance calculations, SHAP calculations)
