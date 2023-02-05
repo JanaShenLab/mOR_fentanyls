@@ -1,8 +1,8 @@
 import pandas as pd
 
-#read file obtained from PLUMED
+#read the output file ("DZ") obtained from PLUMED
 #CV1 is z-position (used as cutoff for exit)
-data = pd.read_csv('pmfxy/DZ',delimiter='\s+',comment='#',
+data = pd.read_csv('DZ',delimiter='\s+',comment='#',
         header=None,names=['time','CV1','CV2','bias','rct','acc']) 
 
 #z = 15 angstrom from COM of binding pocket as exit cutoff
