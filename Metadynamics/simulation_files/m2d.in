@@ -39,7 +39,7 @@ metadynamics {
 colvars O CN 
 hillWeight 0.5 0.5 
 hillWidth 1 1;# 2sd (sd should be equal to or greater than colvars width) 
-newHillFrequency 5000 
+newHillFrequency 5000 ; #bias deposited in every 10 ps
 wellTempered on
 biasTemperature 4340 ; # PNAS by Tiwary used deltaT = 14T --> factor of 15  
 writeHillsTrajectory on  
