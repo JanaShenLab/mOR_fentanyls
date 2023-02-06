@@ -1,5 +1,4 @@
 
-import matplotlib.pyplot as plt
 import numpy as np
 import scipy as sp
 import pandas as pd
@@ -8,18 +7,9 @@ from scipy.stats import ks_2samp, kstest
 from statsmodels.distributions.empirical_distribution import ECDF
 from sklearn.utils import resample
 from scipy.optimize import curve_fit
-from sklearn.metrics import r2_score
 from scipy.stats import (norm,gamma,sem)
 from scipy import stats
-from matplotlib.ticker import MultipleLocator
-from matplotlib import rcParams
-import matplotlib
-rcParams['font.family'] ='sans'
-rcParams['axes.spines.top'] = 'False'
-rcParams['axes.spines.right'] = 'False'
-rcParams['axes.titlepad'] = '15'
-matplotlib.rc('xtick', labelsize=14)
-matplotlib.rc('ytick', labelsize=14)
+
 
 def func(x,tau):
     return 1-np.exp(-x/tau)
