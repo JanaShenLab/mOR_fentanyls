@@ -4,7 +4,7 @@ Input and analysis scripts for the paper "Structure-Kinetics Relationships of Op
 
 Metadynamics 
 
-             -- Simulation inputs
+             -- Simulation inputs (NAMD2)
 
              -- Postprocessing analysis with PLUMED
              
