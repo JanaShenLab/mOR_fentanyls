@@ -3,7 +3,7 @@ Input and analysis scripts for the paper "Structure-Kinetics Relationships of Op
 
 Software packages used: NAMD2, VMD (https://www.ks.uiuc.edu/Development), ColVars (https://github.com/Colvars/colvars/tree/master/namd), PLUMED (https://www.plumed.org)
 
-Metadynamics 
+Metadynamics: ligand dissociation and residence time approximation 
 
              -- Simulation inputs (NAMD2)
 
@@ -12,7 +12,7 @@ Metadynamics
              -- Residence time calculations
 
 
-ML_regression_analysis
+ML_regression_analysis: characterize important ligand-residue interaction pairs governing residence times
 
             -- Data files (zipped)
             
