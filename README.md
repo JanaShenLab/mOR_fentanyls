@@ -13,6 +13,6 @@ Metadynamics
 
 ML_regression_analysis
 
-            -- Input files (zipped)
+            -- Data files (zipped)
             
             -- Analysis workflow in Jupyter notebook
